@@ -44,7 +44,45 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .main-container {
+    display: flex;
+    max-width: 65rem;
+    box-shadow: 0 0 2rem var(--pale-blue);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  .left {
+    min-width: 30rem;
+  }
+
+  .right {
+    min-width: 35rem;
+  }
+
+  .result-box {
+    border-top-right-radius: 2rem;
+  }
+
+  .result-container p {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .summary {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .gradient-bg {
@@ -56,17 +94,46 @@ body {
 }
 
 .result-box {
-  padding: 3rem 1.5rem;
+  padding: 3rem 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .result-container {
-  max-width: 300px;
+  max-width: 260px;
   margin: 0 auto;
   text-align: center;
 }
 
 .result-container h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--pale-blue);
   opacity: 0.6;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.result-container h2 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-top: 30px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.result-container p {
+  font-size: 1.4rem;
+  color: var(--pale-blue);
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.summary {
+  background: var(--white);
+  padding: 3rem 2rem;
+}
+
+.sumary-container h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
