@@ -39,8 +39,7 @@ code {
   font-family: "Hanken Grotesk", sans-serif;
 }
 
-@media only screen and (min-width: 375px) {
-  html {
-    font-size: 50%;
-  }
+body {
+  font-size: 1.8rem;
+  font-family: "Hanken Grotesk", sans-serif;
 }
